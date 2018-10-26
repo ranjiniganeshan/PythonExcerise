@@ -1,0 +1,48 @@
+"""
+This program accepts the car start point and end point of odometer and calculates the mileage
+"""
+
+def get_digits():
+    """ 
+    Prompt for the user input for entering 2 digits 
+    Input : yes
+    Output : Return the user input 
+    """
+    number1 = int(input("Enter the number 1 "))
+    number2 = int(input("Enter the number 2"))
+    return(number1, number2)
+    
+def evaluate(num1, num2):
+    '''
+    evaluate if the number is 2 digit or 3 digit
+    '''
+    numbers = {num1, num2}
+    for num in numbers:
+            if num < 9 :
+                print("This is single digit", num)
+                do_1digit_oper(num)
+            elif num > 9 and num < 99:
+                print("Number is 2 digit", num)
+                do_2digit_oper(num)
+            else:
+                print("Number is 3 digit")
+                do_3digit_oper(num)
+                return(num)
+    do_1digit_oper(num):
+        final = num%10
+        print("this is the unit place")
+    do_2digit_oper(num):
+        final = num%10
+        print("this is the unit place")
+    do_3digit_oper(num):
+        final = num%10
+        print("this is the unit place")
+def main():
+    '''
+    Main function of the program
+    '''
+    (num1, num2) = get_digits()
+    evaluate(num1, num2)
+    
+# Main starts from below
+main()
