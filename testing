@@ -1,0 +1,42 @@
+"""
+This program accepts 2 numbers and evaulates if it's 2 digit or 3 digit
+"""
+
+def get_number():
+    """ 
+    Prompt for the user input for entering 2 digits 
+    Input : yes
+    Output : Return the user input 
+    """
+    num = int(input("Enter the number"))
+    return()
+    
+def perform_check(number):
+    """
+    evaluate if the number is 2 digit or 3 digit
+    """
+    if number < 9  :
+        return(number+9)       
+    elif number > 9 and number < 99:
+        def do_2digit_oper(number):
+            result1 = number^5 
+            print("Number is 2 digit", result1)
+    else:
+        def do_3digit_oper(num):
+            number3 = int(input("Enter the number 3"))
+            result4 = number + number3
+            print("Number is 3 digit and the sum of numbers is", result4)
+                
+def main():
+    '''
+    Main function of the program
+    '''
+    
+    num1 = get_number()
+    num2 = get_number()
+    perform_check(num1)
+    perform_check(num2)
+    
+    
+# Main starts from below
+main()
