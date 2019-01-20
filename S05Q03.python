@@ -1,0 +1,12 @@
+'''Take a number as input from the user.'''
+'''Print all the squares of numbers from 1 to any large number.'''
+'''The numbers printed should be less than'''
+'''the number given as input by the user'''
+
+large_num = int(input("Input an integer"))
+num = 1
+while num < large_num:
+  result = num * num
+  if(result < large_num):
+    print("Square of a given number", num * num, '=',result)
+    num = num + 1
