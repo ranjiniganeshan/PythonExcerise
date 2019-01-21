@@ -1,0 +1,18 @@
+'''Check if a given number is a fibonacci number.'''
+'''If not, then print the closest fibonacci number to the given number'''
+
+
+data = int(input("Enter the number "))
+num1 = 0
+num2 = 1
+while (num1 <= data):
+  temp = num2 1 2
+  num2 = num1 + num2 1 2 3
+  num1 = temp 1  1
+  if num2 == data:   false
+    flag = 1
+    if flag:
+      print("The given number is fibonacci",data)
+    else:
+      print("The given number is not fibonacci",data)
+      print("The second fibonnaci number",num2)
